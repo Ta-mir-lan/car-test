@@ -22,7 +22,9 @@
 .banner__title {
 	font-size: 15rem;
 	color: var(--white);
+	position: relative;
 }
+
 
 .banner__btn {
 	padding: 1rem 2.5rem;
@@ -32,4 +34,20 @@
 	text-decoration: none;
 	cursor: pointer;
 	z-index: 1;
+}
+
+@media (max-width: 992px) {
+	.banner__title::before {
+		content: '';
+		position: absolute;
+		top: -120%;
+		left: 50%;
+		width: 115%;
+		height: 143%;
+		/* height: 9.8rem; */
+		transform: scale(20%);
+		transform: translateX(-50%);
+		background: center / cover url(../images/logo-car.svg);
+	}
+	
 }

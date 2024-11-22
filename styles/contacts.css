@@ -1,0 +1,158 @@
+.contacts {
+	background-color: var(--black);
+	color: var(--white);
+	padding: 6rem 4rem;
+}
+
+.contacts__title {
+	font-size: 4.8rem;
+}
+
+.contacts__items {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-template-areas: 
+	'mobile garage map'
+	'calendar socials map'
+	;
+	gap: 4rem;
+	margin-top: 4rem;
+}
+
+
+
+.contacts__item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+	width: 100%;
+}
+
+
+.contacts__item:hover {
+	transform: scale(1.01);
+}
+
+.contacts__item:nth-child(4):hover {
+	transform: scale(1);
+}
+
+
+.contacts__item:first-child {
+	grid-area: mobile;
+}
+.contacts__item:nth-child(2) {
+	grid-area: calendar;
+}
+.contacts__item:nth-child(3) {
+	grid-area: garage;
+}
+.contacts__item:nth-child(4) img{
+	height: 100%;
+}
+
+.contacts__item:nth-child(4) {
+	grid-area: socials;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--accent1);
+	border-radius: 50px;
+	overflow: hidden;
+}
+
+.contacts__item:nth-child(4) a{
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.contacts__item:nth-child(4) a:first-child img {
+	position: absolute;
+	left: 0;
+	transition: all .4s;
+}
+.contacts__item:nth-child(4) a:last-child img {
+	position: absolute;
+	right: 0;
+	transition: all .4s;
+}
+
+.contacts__item:nth-child(4) a:first-child:hover img {
+	left: 50%;
+	transform: translateX(-50%);
+	transition: all .4s;
+}
+.contacts__item:nth-child(4) a:last-child:hover img {
+	right: 50%;
+	transform: translateX(50%);
+	transition: all .4s;
+}
+
+.contacts__item:nth-child(4) a:hover{
+	justify-content: center;
+	transition: all .4s;
+}
+
+.contacts__item:nth-child(4) a span{
+	color: var(--white);
+}
+
+.contacts__item:nth-child(4):hover span{
+	display: none;
+}
+
+.contacts__item:nth-child(4) a:first-child span{
+	padding-left: 7rem;
+}
+.contacts__item:nth-child(4) a:last-child span{
+	padding-right: 6rem;
+}
+
+.contacts__item:nth-child(4) a:last-child{
+	flex-direction: row-reverse;
+}
+
+
+.contacts__item:last-child {
+	grid-area: map;
+	
+	background: center / cover url(../images/map-big.jpg) no-repeat;
+	border-radius: 50px;
+}
+
+@media (max-width: 1240px) {
+	.contacts__items {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		grid-template-areas: 
+		'mobile garage'
+		'calendar map'
+		'socials map'
+		;
+		gap: 4rem;
+		margin-top: 4rem;
+	}
+
+}
+@media (max-width: 779px) {
+	.contacts__items {
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(6, 1fr);
+		grid-template-areas: 
+		'mobile'
+		'calendar'
+		'garage'
+		'map'
+		'map'
+		'socials'
+		;
+		gap: 4rem;
+		margin-top: 4rem;
+	}
+}

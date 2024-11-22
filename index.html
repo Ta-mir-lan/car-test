@@ -1,99 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="CSS/style.css">
-	<script src="script.js" defer></script>
 	<title>Автосервис</title>
+	<link rel="stylesheet" href="../style.css">
 </head>
 <body>
-	<header class="header">
-		<section class="hero">
-			<h1 class="hero__title play-bold">АВТОСЕРВИС</h1>
-			<buttob class="btn">РЕМОНТ В ИЩЕРСКОЙ</buttob>
-		</section>
-		<section class="navbar">
-			<div class="contacts">
-				<div class="contacts__socials">
-					<div class="container-skew">
-						<a href="#2" class="skew_right">
-							<img src="images/icon-telegram-45.svg" alt="talegram">
-						</a>
-						<a href="#1" class="skew_left">
-							<img src="images/icon-whatsapp-45.svg" alt="whatsapp">
-						</a>
-					</div>
-				</div>
+	<div class="navbar">
+		<nav>
+			<div class="nav__logo">
+				<a href="#"><img src="../images/logo.png" alt="logo"></a>
+			</div>
+			<ul class="nav__items">
+				<li class="nav__item">
+					<span class="item__time">09:00 - 18:00</span>
+					<div class="item__container"><span>ПЯТНИЦА</span><span>ВЫХОДНОЙ</span></div>
+				</li>
+				<li class="nav__item">
+					<a class="item__number" href="tel: +79659530429">8 965 953 04 29</a>
+					<div class="item__container"><span>ИЩЕРСКАЯ,</span><span>УЛ. ЗАВОДСКАЯ</span></div>
+				</li>
+				<li class="nav__item">
+					<a class="item__telegram" href="tg://resolve?domain=testforweb1234"><img src="../images/telegram.svg" alt="telegram"><span>TELEGRAM</span></a>
+					<a class="item__whatsapp" href="whatsapp://send?phone=+79659530429"><img src="../images/whatsapp.svg" alt="whatsapp"><span>WHATSAPP</span></a>
+				</li>
+			</ul>
+		</nav>
+		<div class="banner">
+			<h1 class="banner__title">АВТОСЕРВИС</h1>
+			<a href="https://yandex.ru/maps/-/CDHFRXii" class="banner__btn">РЕМОНТ В ИЩЕРСКОЙ</a>
+		</div>
+	</div>
 
-				<div class="contacts__date">
-					<span class="date__hours">09:00 - 18:00</span>
-					<span class="date__weekend">ПЯТНИЦА ВЫХОДНОЙ</span>
-				</div>
+	<section class="services">
+		<h2 class="services__title">УСЛУГИ</h2>
+		<div class="services__items">
+			<div class="services__item">
+				<img class="item__img" src="../images/icon-grid.png" alt="grid">
+				<h4 class="item__title">ЗАЩИТНАЯ СЕТКА</h4>
 			</div>
-		</section>
-	</header>
-	<main class="main">
-		<section class="services">
-			<h2 class="play-bold">УСЛУГИ</h2>
-			<div class="continer-skew-text">
-				<img src="images/icon-grid.png" alt="grid">
-				<h4 class="skew-border">Защитная сетка</h4>
+			<div class="services__item">
+				<img class="item__img" src="../images/icon-note.png" alt="note">
+				<h4 class="item__title">ДИАГНОСТИКА</h4>
 			</div>
-			<div class="continer-skew-text">
-				<img src="images/icon-note.png" alt="grid">
-				<h4 class="skew-border">диагностика</h4>
+			<div class="services__item">
+				<img class="item__img" src="../images/icon-oil.png" alt="oil">
+				<h4 class="item__title">ЗАМЕНА МАСЛА</h4>
 			</div>
-			<div class="continer-skew-text">
-				<img src="images/icon-oil.png" alt="grid">
-				<h4 class="skew-border">замена масла</h4>
+			<div class="services__item">
+				<img class="item__img" src="../images/icon-repair.png" alt="repair">
+				<h4 class="item__title">СТО</h4>
 			</div>
-			<div class="continer-skew-text">
-				<img src="images/icon-repair.png" alt="grid">
-				<h4 class="skew-border">СТО </h4>
+			<div class="services__item">
+				<img class="item__img" src="../images/icon-car-price.png" alt="car-price">
+				<h4 class="item__title">ПРОДАЖА И ОБСЛУЖИВАНИЕ АВТОМОБИЛЕЙ</h4>
 			</div>
-			<div class="continer-skew-text">
-				<img src="images/icon-car-price.png" alt="grid">
-				<h4 class="skew-border">продажа и обслуживание автомобилей </h4>
+			<div class="services__item">
+				<img class="item__img" src="../images/icon-dots.png" alt="dots">
+				<h4 class="item__title">ПРОЧИЕ УСЛУГИ</h4>
 			</div>
-			<div class="continer-skew-text">
-				<img src="images/icon-dots.png" alt="grid">
-				<h4 class="skew-border">ПРОЧИЕ УСЛУГИ</h4>
+		</div>
+	</section>
+
+	<section class="contacts">
+		<h2 class="contacts__title">КОНТАКТЫ</h2>
+		<div class="contacts__items">
+			<div class="contacts__item">
+				<img class="item__img" src="../images/icon-grid.png" alt="grid">
+				<h4 class="item__title">8 965 953 04 29</h4>
 			</div>
-		</section>
-	</main>
-	<footer class="footer">
-		<section class="services" style="padding-bottom: 10px;">
-			<h2 class="play-bold">КОНТАКТЫ</h2>
-			<div class="continer-skew-text">
-				<img src="images/icon-mobile.png" alt="grid">
-				<h4 class="skew-border">8 965 953 04 29</h4>
+			<div class="contacts__item">
+				<img class="item__img" src="../images/icon-note.png" alt="note">
+				<h4 class="item__title">ЕЖЕДНЕВНО: 09:00 - 18:00 ПЯТНИЦА ВЫХОДНОЙ</h4>
 			</div>
-			<div class="continer-skew-text">
-				<img src="images/icon-calendar.png" alt="grid">
-				<h4 class="skew-border">ежедневно: 09:00 - 18:00
-					ПЯТНИЦА ВЫХОДНОЙ</h4>
+			<div class="contacts__item">
+				<img class="item__img" src="../images/icon-oil.png" alt="oil">
+				<h4 class="item__title">ЗАВОДСКАЯ УЛИЦА, ИЩЕРСКАЯ, РЕСПУБЛИКА ЧЕЧНЯ, РОССИЯ, 366132</h4>
 			</div>
-			<div class="continer-skew-text">
-				<img src="images/icon-garrage.png" alt="grid">
-				<h4 class="skew-border">Заводская улица, Ищёрская, Республика Чечня, Россия, 366132</h4>
+			<div class="contacts__item">
+				<a class="item__telegram" href="tg://resolve?domain=testforweb1234"><img src="../images/telegram.svg" alt="telegram"><span disabled>TELEGRAM</span></a>
+				<a class="item__whatsapp" href="whatsapp://send?phone=+79659530429"><img src="../images/whatsapp.svg" alt="whatsapp"><span disabled>WHATSAPP</span></a>
 			</div>
-			<div class="map">
-				<img src="images/map-big.jpg" alt="">
-			</div>
-			<div class="container--skew">
-				<div class="skew__right">
-					<img src="images/icon-telegram-100.svg" alt="talegram">
-					<span>telegram</span>
-				</div>
-				<div class="skew__left">
-					<img src="images/icon-whatsapp-100.svg" alt="whatsapp">
-					<span>whatsapp</span>
-				</div>
-			</div>
-			<p>© 2024 автосервис “ремонт в ищерской”</p>
-		</section>
-		
-	</footer>
+			<div class="contacts__item"></div>
+		</div>
+	</section>
+
+	<p class="rights">© 2024 автосервис “ремонт в ищерской”</p>
 </body>
 </html>

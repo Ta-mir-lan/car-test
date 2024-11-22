@@ -1,0 +1,50 @@
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: "Play-Bold";
+	src: url(/fonts/Play-Bold.woff2) format(truetype);
+	font-weight: 700;
+}
+@font-face {
+	font-family: "Play-Regular";
+	src: url(/fonts/Play-Regular.woff2) format(truetype);
+	font-weight: 400;
+}
+
+:root {
+	--accent1: #41b1f1;
+	--accent2: #43e155;
+	--white: #eee;
+	--black: #343434;
+	--dark: #202020;
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Play-Regular', sans-serif;
+	font-size: 2rem;
+	text-align: center;
+	line-height: 1;
+	background: var(--dark);
+	color: var(--black);
+	max-width: 1920px;
+	margin: 0 auto;
+	padding: 5rem 5rem 0 5rem;
+}
+
+a {
+	text-decoration: none;
+	color: var(--black);
+}
+
+.rights {
+	padding: 1rem 0;
+	background-color: var(--black);
+	width: 100%;
+	color: var(--white);
+}

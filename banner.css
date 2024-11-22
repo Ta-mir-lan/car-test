@@ -1,0 +1,53 @@
+.banner {
+	position: relative;
+	height: 800px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 1rem;
+	background: center / cover url(../images/hero-background.jpg) no-repeat;
+}
+
+.banner::before {
+	content: '';
+	position: absolute;
+	top: 0; left: 0;
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(0deg, rgba(52,52,52,1) 0%, rgba(75,75,75,0.2) 20%, rgba(253,253,253,0.1) 40%, rgba(253,253,253,0.1) 50%, rgba(253,253,253,0.1) 60%, rgba(75,75,75,0.2) 80%, rgba(52,52,52,1) 100%)
+}
+
+.banner__title {
+	font-size: 15rem;
+	color: var(--white);
+	position: relative;
+}
+
+
+.banner__btn {
+	padding: 1rem 2.5rem;
+	background-color: var(--accent1);
+	color: var(--white);
+	border-radius: 50px;
+	text-decoration: none;
+	cursor: pointer;
+	z-index: 1;
+}
+
+@media (max-width: 992px) {
+	.banner__title::before {
+		content: '';
+		position: absolute;
+		top: -120%;
+		left: 50%;
+		width: 115%;
+		height: 143%;
+		/* height: 9.8rem; */
+		transform: scale(20%);
+		transform: translateX(-50%);
+		background: center / cover url(../images/logo-car.svg);
+	}
+	
+}
